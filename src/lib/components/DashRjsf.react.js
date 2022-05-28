@@ -11,14 +11,10 @@ import PropTypes from 'prop-types';
  */
 export default class DashRjsf extends Component {
     render() {
-        const {id, schema, setProps, children, uischema, value} = this.props;
+        const {setProps, value, ...props} = this.props;
 
         return (
             <Form
-		id={id}
-		schema={schema}
-		children={children}
-		uiSchema={uischema}
 		formData={value}
                 onSubmit={
                         /*
@@ -32,6 +28,7 @@ export default class DashRjsf extends Component {
                          */
                         e => setProps({ value: e.formData })
                     }
+		{...props}
                 />
         );
     }
