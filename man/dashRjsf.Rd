@@ -10,7 +10,7 @@ ExampleComponent is an example component. It takes a property, `schema`, and dis
 }
 
 \usage{
-dashRjsf(children=NULL, id=NULL, schema=NULL, uischema=NULL,
+dashRjsf(children=NULL, id=NULL, schema=NULL, uiSchema=NULL,
 value=NULL)
 }
 
@@ -21,7 +21,7 @@ value=NULL)
 
 \item{schema}{Logical | numeric | character | named list | unnamed list. A schema that will be printed when this component is rendered.}
 
-\item{uischema}{Logical | numeric | character | named list | unnamed list. }
+\item{uiSchema}{Logical | numeric | character | named list | unnamed list. }
 
 \item{value}{Logical | numeric | character | named list | unnamed list. The value displayed in the input.}
 }

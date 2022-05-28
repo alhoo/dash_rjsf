@@ -52,11 +52,11 @@ DashRjsf.propTypes = {
      */
     value: PropTypes.any,
     children: PropTypes.any,
-    uischema: PropTypes.any,
+    uiSchema: PropTypes.any,
 
     /**
      * Dash-assigned callback that should be called to report property changes
      * to Dash, to make them available for callbacks.
      */
     setProps: PropTypes.func
-};
+}

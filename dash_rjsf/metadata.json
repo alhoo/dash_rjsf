@@ -32,7 +32,7 @@
         "required": false,
         "description": ""
       },
-      "uischema": {
+      "uiSchema": {
         "type": {
           "name": "any"
         },
