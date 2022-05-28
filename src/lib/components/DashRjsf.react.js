@@ -18,7 +18,7 @@ export default class DashRjsf extends Component {
 		id={id}
 		schema={schema}
 		children={children}
-		uischema={uischema}
+		uiSchema={uischema}
 		formData={value}
                 onSubmit={
                         /*
