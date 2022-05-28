@@ -13,6 +13,8 @@ which is editable by the user.
 
 Keyword arguments:
 
+- children (boolean | number | string | dict | list; optional)
+
 - id (string; optional):
     The ID used to identify this component in Dash callbacks.
 
@@ -22,12 +24,12 @@ Keyword arguments:
 - value (boolean | number | string | dict | list; optional):
     The value displayed in the input."""
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, schema=Component.REQUIRED, value=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'schema', 'value']
+    def __init__(self, children=None, id=Component.UNDEFINED, schema=Component.REQUIRED, value=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'id', 'schema', 'value']
         self._type = 'DashRjsf'
         self._namespace = 'dash_rjsf'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'schema', 'value']
+        self.available_properties = ['children', 'id', 'schema', 'value']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
@@ -37,4 +39,4 @@ Keyword arguments:
             if k not in args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')
-        super(DashRjsf, self).__init__(**args)
+        super(DashRjsf, self).__init__(children=children, **args)

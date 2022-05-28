@@ -11,12 +11,13 @@ import PropTypes from 'prop-types';
  */
 export default class DashRjsf extends Component {
     render() {
-        const {id, schema, setProps, value} = this.props;
+        const {id, schema, setProps, children, value} = this.props;
 
         return (
             <Form
 		id={id}
 		schema={schema}
+		children={children}
 		formData={value}
                 onSubmit={
                         /*
@@ -52,6 +53,7 @@ DashRjsf.propTypes = {
      * The value displayed in the input.
      */
     value: PropTypes.any,
+    children: PropTypes.any,
 
     /**
      * Dash-assigned callback that should be called to report property changes

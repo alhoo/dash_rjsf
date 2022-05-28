@@ -25,6 +25,13 @@
         "required": false,
         "description": "The value displayed in the input."
       },
+      "children": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
       "setProps": {
         "type": {
           "name": "func"
