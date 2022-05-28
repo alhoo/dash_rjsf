@@ -21,15 +21,17 @@ Keyword arguments:
 - schema (boolean | number | string | dict | list; required):
     A schema that will be printed when this component is rendered.
 
+- uischema (boolean | number | string | dict | list; optional)
+
 - value (boolean | number | string | dict | list; optional):
     The value displayed in the input."""
     @_explicitize_args
-    def __init__(self, children=None, id=Component.UNDEFINED, schema=Component.REQUIRED, value=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'id', 'schema', 'value']
+    def __init__(self, children=None, id=Component.UNDEFINED, schema=Component.REQUIRED, value=Component.UNDEFINED, uischema=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'id', 'schema', 'uischema', 'value']
         self._type = 'DashRjsf'
         self._namespace = 'dash_rjsf'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'id', 'schema', 'value']
+        self.available_properties = ['children', 'id', 'schema', 'uischema', 'value']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()

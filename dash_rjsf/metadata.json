@@ -32,6 +32,13 @@
         "required": false,
         "description": ""
       },
+      "uischema": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
       "setProps": {
         "type": {
           "name": "func"

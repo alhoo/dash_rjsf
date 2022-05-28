@@ -17,7 +17,6 @@ app.layout = html.Div([
     dash_rjsf.DashRjsf(
         id='input',
         schema=schema,
-        children=" "
     ),
     html.Div(id='output')
 ])
