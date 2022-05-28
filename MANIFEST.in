@@ -1,0 +1,11 @@
+include dash_rjsf/dash_rjsf.min.js
+include dash_rjsf/dash_rjsf.min.js.map
+include dash_rjsf/async-*.js
+include dash_rjsf/async-*.js.map
+include dash_rjsf/*-shared.js
+include dash_rjsf/*-shared.js.map
+include dash_rjsf/metadata.json
+include dash_rjsf/package-info.json
+include README.md
+include LICENSE
+include package.json
