@@ -1,6 +1,6 @@
 {
   "name": "dash_rjsf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dash component based on the react-jsonschema-form",
   "repository": {
     "type": "git",
